@@ -30,9 +30,9 @@ class Koi(DockWidget):
         self.input_layout = QFormLayout()
 
         self.prompt = QPlainTextEdit(self.input_widget)
-        self.prompt.setPlaceholderText("Describe your end goal...")
+        self.prompt.setPlaceholderText("Describe...")
         self.prompt.setPlainText(
-            "A beautiful mountain landscape in the style of greg rutkowski, oils on canvas."
+            "A beautiful alien landscape in the style of greg rutkowski, oils on canvas."
         )
 
         self.steps = QSpinBox(self.input_widget)
