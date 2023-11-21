@@ -102,7 +102,7 @@ class Koi(DockWidget):
         Return: Encoded bytes to send as data in post request.
         """
 
-        headers = {
+        return {
             "variations": str(self.variations.value()),
             "prompt": self._prompt_text(),
             "steps": str(self.steps.value()),
@@ -110,8 +110,6 @@ class Koi(DockWidget):
             "sketch_strength": str(self.sketch_strengh.value()),
             "prompt_strength": str(self.prompt_strength.value()),
         }
-
-        return headers
 
     def _get_endpoint(self):
         return str(self.endpoint.text())
